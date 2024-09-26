@@ -1,12 +1,12 @@
 package lexer
 
 import (
-	"io/ioutil"
+	"os"
 	"strings"
 )
 
 func TokenizeFile(filename string) ([]string, error) {
-	data, err := ioutil.ReadFile(filename)
+	data, err := os.ReadFile(filename)
 	if err != nil {
 		return nil, err
 	}
