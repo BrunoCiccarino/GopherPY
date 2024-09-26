@@ -7,3 +7,22 @@ Gopher is a transpiler that transfers basic codes written in Python to basic cod
 ### Usage
 
 ```go run main.go <python-file>```
+
+### Example
+
+* Input code:
+
+```Python
+def soma(a, b):
+    return a + b
+
+if __name__ == "__main__":
+    print(soma(1, 2))
+```
+
+* Output code:
+
+```Golang
+func soma(a,() {a + b 
+}
+```
